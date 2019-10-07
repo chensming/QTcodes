@@ -13,6 +13,10 @@ git init
 2.与github项目连接
 git remote add origin 项目网址.git
 
+稍微常用:
+1.将github仓库更新到本地
+    git pull origin master
+
 
 常用（每次改动都用到）
 1.添加暂存
@@ -23,7 +27,7 @@ git remote add origin 项目网址.git
       将文件添加到暂存区 git add hello.py
 4.将文件添加到仓库
     git commit -m "描述信息"
-5.将github仓库更新到本地
-    git pull origin master
+5.将本地的项目更新到github上
+    git push origin master
    
 
