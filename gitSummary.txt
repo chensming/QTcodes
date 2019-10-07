@@ -16,6 +16,8 @@ git remote add origin 项目网址.git
 稍微常用:
 1.将github仓库更新到本地
     git pull origin master
+2.将github仓库复制一份到本地
+    git clone 要复制的项目网址.git
 
 
 常用（每次改动都用到）
