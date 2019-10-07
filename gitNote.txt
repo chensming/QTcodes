@@ -3,9 +3,9 @@
 2.设置用户名邮箱
     git config --global user.email 'example@qq.com'
 3.(初始项目文件时必用)初始化
-    git init
+    !!!git init
     与github项目连接
-    git remote add origin https://github.com/chensming/QTcodes.git
+    !!!git remote add origin https://github.com/chensming/QTcodes.git
 4.查看设置
     git config --list
 5.(常用)查看状态

@@ -1,0 +1,29 @@
+git总结
+
+(1和2在电脑上一次就好)
+1.设置用户名
+    git config --global user.name '仓库名'
+2.设置用户名邮箱
+    git config --global user.email 'example@qq.com'
+
+
+(1和2每个项目一次)
+1.初始化
+git init
+2.与github项目连接
+git remote add origin 项目网址.git
+
+
+常用（每次改动都用到）
+1.添加暂存
+        vscode在 左上角源代码管理那里
+2.查看状态
+    git status
+3.可能git status回车后会提示 
+      将文件添加到暂存区 git add hello.py
+4.将文件添加到仓库
+    git commit -m "描述信息"
+5.将github仓库更新到本地
+    git pull origin master
+   
+
