@@ -1,0 +1,45 @@
+1.设置用户名
+    git config --global user.name '仓库名'
+2.设置用户名邮箱
+    git config --global user.email 'example@qq.com'
+3.(初始项目文件时必用)初始化
+    git init
+    与github项目连接
+    git remote add origin https://github.com/chensming/QTcodes.git
+4.查看设置
+    git config --list
+5.(常用)查看状态
+    git status
+6.将文件添加到暂存区
+    git add hello.py
+7.将文件添加到仓库
+    git commit -m'描述信息'
+8.(常用)将github仓库更新到本地
+    git pull origin master
+9.(常用,写完把项目同步上去)
+    写完后提交步骤:
+    1)先保存
+    2)先把文件添加到仓库
+    git commit -m "描述信息"
+    3)将本地仓库同步到github仓库
+    git push origin master
+10.(常用)从github上克隆到本地
+    git clone 项目网址.git
+11.用vscode的话源代码管理那有git的同步命令
+
+12.create a new repository on the command line
+---------------------------------------------------
+    echo "# website.backup" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/chensming/website.backup.git
+    git push -u origin master
+
+
+
+13.push an existing repository from the command line
+-----------------------------------------------------------
+    git remote add origin https://github.com/chensming/website.backup.git
+    git push -u origin master
+
