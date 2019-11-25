@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     // 3. 在文件的菜单上添加添加菜单项
     QAction *pNew = pVersion->addAction("version");//添加 "新建" 菜单项动作
-    QString str = "超市管理系统 \n 版本: 1.0  \n 作者: 陈烁明 \t 2019.10";
+    QString str = "超市管理系统 \n 版本: 1.0  \n 作者: chensming \t 2019.10";
 
     // 4. 新建菜单选项的触发动作信号和槽 使用Lambda表达式的匿名槽函数
     connect(pNew,&QAction::triggered,// "新建" 按下后的动作打印信息
