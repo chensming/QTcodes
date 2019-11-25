@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1019</width>
+    <height>848</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(219, 255, 250);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>0</y>
+      <width>851</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(212, 255, 239);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>20</y>
+        <width>361</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Agency FB&quot;;
+color: rgb(85, 0, 255);</string>
+      </property>
+      <property name="text">
+       <string>超市后台管理系统</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonShopType">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>130</y>
+        <width>171</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;
+background-color: rgb(251, 242, 255);</string>
+      </property>
+      <property name="text">
+       <string>仓库中商品种类</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditShopType">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>130</y>
+        <width>211</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;
+background-color: rgb(251, 242, 255);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelBackground">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>220</y>
+        <width>771</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(252, 255, 217);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonHAdd">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>570</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 209, 170);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>添加商品</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>270</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(151, 195, 200);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>商品编号</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>370</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(151, 195, 200);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>商品价格</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>470</y>
+        <width>141</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(151, 195, 200);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>商品名称</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonLook">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>570</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 209, 170);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>查看商品信息</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditHIsb">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>270</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditHPrice">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>370</y>
+        <width>291</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditHName">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>470</y>
+        <width>291</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonHEdit">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>570</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 209, 170);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>修改商品信息</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonHGet">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>270</y>
+        <width>101</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>获取商品编号</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonHDelete">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>570</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 209, 170);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>删除商品</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>700</y>
+        <width>281</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(151, 195, 200);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>输出商品信息</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonReadFile">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>130</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>readfile</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonWriteFile">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>160</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>writefile</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonMakeEmtpy">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>700</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(151, 195, 200);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>清空仓库商品</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>110</y>
+        <width>72</width>
+        <height>15</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>备用按钮</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>20</y>
+        <width>371</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 30pt &quot;Agency FB&quot;;
+color: rgb(65, 90, 200);</string>
+      </property>
+      <property name="text">
+       <string>后台管理登陆</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>200</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>用户名</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>370</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 20pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>密码</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditUserName">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>200</y>
+        <width>391</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditPasswork">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>370</y>
+        <width>401</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonLogin">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>530</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 209, 170);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonLoginCancel">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>530</y>
+        <width>251</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 209, 170);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Cancel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLineEdit" name="lineEditIsbNum">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>80</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 253, 225);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>80</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;
+background-color: rgb(251, 242, 255);</string>
+      </property>
+      <property name="text">
+       <string>商品编号*</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditSinglePrice">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>220</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 253, 225);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonAdd">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>370</y>
+        <width>521</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(170, 255, 127);
+font: 16pt &quot;Agency FB&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>添加此商品到清算区</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>220</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;
+background-color: rgb(251, 242, 255);</string>
+      </property>
+      <property name="text">
+       <string>商品单价</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditHaveNumber">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>440</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 253, 225);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditTotalPrice">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>530</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 253, 225);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>440</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;
+background-color: rgb(251, 242, 255);</string>
+      </property>
+      <property name="text">
+       <string>已结算的商品数量</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonCancel">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>650</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 209, 170);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>取消此次结算</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>0</y>
+        <width>371</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Agency FB&quot;;
+color: rgb(85, 0, 255);</string>
+      </property>
+      <property name="text">
+       <string>超市收银管理系统</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>150</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;
+background-color: rgb(251, 242, 255);</string>
+      </property>
+      <property name="text">
+       <string>份数*</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditNum">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>150</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 253, 225);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>530</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;
+background-color: rgb(251, 242, 255);</string>
+      </property>
+      <property name="text">
+       <string>已结算金额</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonFinish">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>650</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 209, 170);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>完成结算</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonVIP">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>650</y>
+        <width>151</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(67, 200, 37);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>会员9折</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonSearch">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>90</y>
+        <width>151</width>
+        <height>261</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(200, 184, 151);
+font: 16pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>查找商品</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>300</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;
+background-color: rgb(251, 242, 255);</string>
+      </property>
+      <property name="text">
+       <string>商品名称</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditName">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>300</y>
+        <width>181</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 253, 225);
+font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QListWidget" name="listWidget">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>141</y>
+        <width>671</width>
+        <height>611</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 24pt &quot;Agency FB&quot;;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>20</y>
+        <width>321</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;
+font: 26pt &quot;Agency FB&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>后台商品</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonBackToFront">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>120</y>
+        <width>93</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 12pt &quot;Agency FB&quot;;
+background-color: rgb(190, 252, 255);</string>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>100</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>商品名称</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>100</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>商品编号</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>100</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 18pt &quot;Agency FB&quot;;</string>
+      </property>
+      <property name="text">
+       <string>价格</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButtonfrontend">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>131</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(75, 183, 255);
+font: 12pt &quot;Agency FB&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>前台收银</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonbackend">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>330</y>
+      <width>131</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(75, 183, 255);
+font: 12pt &quot;Agency FB&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>后台管理</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonexit">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>600</y>
+      <width>131</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(75, 183, 255);
+font: 12pt &quot;Agency FB&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1019</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionversion">
+   <property name="text">
+    <string>version</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
